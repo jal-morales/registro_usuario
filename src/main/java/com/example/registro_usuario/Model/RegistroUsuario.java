@@ -34,7 +34,12 @@ public class RegistroUsuario {
     @Column(name = "direcciones_despacho_ru")
     private String direcciones_despacho_ru;
 
-    
+    @Column(name = "correo_ru")
+    private String correo_ru;
+
+    @Column(name = "password_ru")
+    private String password_ru;
+
      /*GET and SET*/
      public int getId_ru() {
         return this.id_ru;
@@ -89,6 +94,22 @@ public class RegistroUsuario {
 
     public void setDirecciones_despacho_ru(String direcciones_despacho_ru) {
         this.direcciones_despacho_ru = direcciones_despacho_ru;
+    }
+
+    public String getCorreo_ru() {
+        return this.correo_ru;
+    }
+
+    public void setCorreo_ru(String correo_ru) {
+        this.correo_ru = correo_ru;
+    }
+
+    public String getPassword_ru() {
+        return this.password_ru;
+    }
+
+    public void setPassword_ru(String password_ru) {
+        this.password_ru = password_ru;
     }
 
 }
