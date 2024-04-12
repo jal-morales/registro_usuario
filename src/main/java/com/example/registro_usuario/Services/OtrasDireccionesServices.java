@@ -3,7 +3,9 @@ package com.example.registro_usuario.Services;
 import java.util.List;
 import java.util.Optional;
 
-import com.example.registro_usuario.OtrasDirecciones;
+import com.example.registro_usuario.Model.OtrasDirecciones;
+
+
 
 public interface OtrasDireccionesServices {
 
@@ -12,7 +14,7 @@ public interface OtrasDireccionesServices {
 
 /*CREAR METODOS*/
 
-    OtrasDirecciones createOtraDireccion(OtrasDirecciones OtrasDirecciones);
-    OtrasDirecciones  updateOtrasDireccion(Integer id_od, OtrasDirecciones OtrasDirecciones);
+    OtrasDirecciones createOtraDireccion(OtrasDirecciones otrasDirecciones);
+    OtrasDirecciones  updateOtrasDireccion(Integer id_od, OtrasDirecciones otrasDirecciones);
     void deleteOtrasDireccion(Integer id_od);
 }
